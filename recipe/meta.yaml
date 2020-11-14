@@ -18,7 +18,7 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - cython
+    - cython >=0.29,<0.29.18
     - numpy
     - pip
     - python
@@ -31,7 +31,7 @@ requirements:
     - scikit-learn
     - scipy
     - setuptools
-    - statsmodels
+    - statsmodels >=0.11,<0.12
     - urllib3
     - {{ pin_compatible('numpy') }}
 
