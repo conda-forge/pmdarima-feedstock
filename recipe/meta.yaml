@@ -18,12 +18,12 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - cython >=0.29,<0.29.18
+    - cython
     - numpy
     - pip
     - python
   run:
-    - cython
+    - cython >=0.29,<0.29.18
     - joblib
     - numpy
     - pandas
