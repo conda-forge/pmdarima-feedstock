@@ -1,5 +1,5 @@
 {% set name = "pmdarima" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b187a6524a470a1cc5866083c0c9e3f18a14037d99936d55d7474e48f4ea451e
+  sha256: 65f22f49ebc2271934a2bb346a6667b19094300eeaebf93a3674577c5440a6bc
 
 build:
   number: 0
@@ -48,8 +48,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Pmdarima (originally pyramid-arima, for the anagram of 'py' + 'arima') is a statistical library designed to fill the void in Python's time series analysis capabilities"
+  summary: Pmdarima (originally pyramid-arima, for the anagram of 'py' + 'arima') is a statistical library designed to fill the void in Python's time series analysis capabilities
 
 extra:
   recipe-maintainers:
-    - cdesouza21 
+    - cdesouza21
