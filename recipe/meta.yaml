@@ -1,5 +1,5 @@
 {% set name = "pmdarima" %}
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0c1f7860ce2f8399c71fc3ead31abc67c7dd9aab8da512b4f31fa919a1999f2
+  sha256: 4aad8cb9d4f3d2bbf78a807d383e23f445dbf4691741b69c90655d932417a521
 
 build:
   number: 0
@@ -23,9 +23,9 @@ requirements:
     - pip
     - python
   run:
-    - cython >=0.29,<0.29.18
+    - cython >=0.29,!=0.29.18
     - joblib >=0.11
-    - numpy >=1.17.3
+    - numpy ~=1.19.0
     - pandas >=0.19
     - python
     - scikit-learn >=0.22
