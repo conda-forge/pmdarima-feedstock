@@ -12,7 +12,6 @@ source:
 build:
   number: 3
   skip: true  # [py2k]
-  script: rm -r pmdarima.egg-info; {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
