@@ -1,2 +1,2 @@
 RMDIR /S /Q .\pmdarima.egg-info\
-{{ PYTHON }} -m pip install . -vv
+python -m pip install . -vv
