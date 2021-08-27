@@ -10,9 +10,8 @@ source:
   sha256: 4aad8cb9d4f3d2bbf78a807d383e23f445dbf4691741b69c90655d932417a521
 
 build:
-  number: 2
-  skip: true  # [win or py2k]
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 3
+  skip: true  # [py2k]
 
 requirements:
   build:
@@ -22,14 +21,14 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - cython
-    - numpy
+    - cython >=0.29,!=0.29.18
+    - numpy =1.19
     - pip
     - python
   run:
     - cython >=0.29,!=0.29.18
     - joblib >=0.11
-    - numpy ~=1.19.0
+    - numpy =1.19
     - pandas >=0.19
     - python
     - scikit-learn >=0.22
@@ -37,7 +36,6 @@ requirements:
     - setuptools <50.0.0
     - statsmodels >=0.11,!=0.12.0
     - urllib3
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
