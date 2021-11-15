@@ -39,11 +39,13 @@ test:
     - pmdarima
   commands:
     - pip check
-    - python -m pytest -v --cov-config .coveragerc --cov pmdarima -p no:logging
+    - python setup.py develop
+    - python -m pytest -v
   requires:
     - pip
     - pytest
-    - pytest-cov
+    - matplotlib
+    - pytest-mpl
 
 about:
   home: https://github.com/alkaline-ml/pmdarima
