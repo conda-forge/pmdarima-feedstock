@@ -39,8 +39,10 @@ test:
     - pmdarima
   commands:
     - pip check
+    - python -m pytest -v
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/alkaline-ml/pmdarima
