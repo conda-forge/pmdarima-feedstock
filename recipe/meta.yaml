@@ -41,6 +41,7 @@ test:
     - pmdarima
   commands:
     - pip check
+    - python setup.py develop
     - python -m pytest -v
   requires:
     - pip
