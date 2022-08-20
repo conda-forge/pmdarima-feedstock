@@ -10,7 +10,7 @@ source:
   sha256: e0127b5ad1578d87cb300b250e84f9c4035009b774a08976b3808e4b57bad457
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k]
 
 requirements:
@@ -22,12 +22,12 @@ requirements:
     - pybind11                               # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - cython >=0.29,!=0.29.18
+    - cython >=0.29,!=0.29.18,!=0.29.31
     - numpy >=1.19.3
     - pip
     - python
   run:
-    - cython >=0.29,!=0.29.18
+    - cython >=0.29,!=0.29.18,!=0.29.31
     - joblib >=0.11
     - {{ pin_compatible('numpy') }}
     - pandas >=0.19
