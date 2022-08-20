@@ -1,5 +1,5 @@
 {% set name = "pmdarima" %}
-{% set version = "1.8.5" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 090a7e195e849059e6b7f9908d80539f63c0771d8f9c5da44472960f17fcc9fa
+  sha256: e0127b5ad1578d87cb300b250e84f9c4035009b774a08976b3808e4b57bad457
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k]
 
 requirements:
