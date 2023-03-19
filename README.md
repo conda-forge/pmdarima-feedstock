@@ -1,11 +1,11 @@
-About pmdarima
-==============
+About pmdarima-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pmdarima-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/alkaline-ml/pmdarima
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pmdarima-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pmdarima (originally pyramid-arima, for the anagram of 'py' + 'arima') is a statistical library designed to fill the void in Python's time series analysis capabilities
 
