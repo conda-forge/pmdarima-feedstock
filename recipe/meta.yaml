@@ -25,6 +25,7 @@ requirements:
   host:
     - cython >=0.29,!=0.29.18,!=0.29.31
     - numpy >=1.21.2
+    - packaging >=17.1
     - pip
     - python
   run:
