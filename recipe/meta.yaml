@@ -42,12 +42,19 @@ requirements:
     - urllib3
 
 test:
+  source_files:
+    - pmdarima
   imports:
     - pmdarima
   commands:
     - pip check
+    - python setup.py develop
+    - python -m pytest -v
   requires:
     - pip
+    - pytest
+    - matplotlib
+    - pytest-mpl
 
 about:
   home: https://github.com/alkaline-ml/pmdarima
