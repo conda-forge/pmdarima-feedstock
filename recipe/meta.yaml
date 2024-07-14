@@ -21,6 +21,7 @@ requirements:
     - numpy >=1.21.2                         # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - cython >=0.29,!=0.29.18,!=0.29.31
     - numpy >=1.21.2
