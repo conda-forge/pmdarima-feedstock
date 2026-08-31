@@ -280,5 +280,4 @@ Feedstock Maintainers
 
 * [@cdesouza21](https://github.com/cdesouza21/)
 * [@mgorny](https://github.com/mgorny/)
-* [@tomasvanpottelbergh](https://github.com/tomasvanpottelbergh/)
 
